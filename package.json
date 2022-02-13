@@ -2,9 +2,10 @@
   "name": "sass-page-bryan-stanski",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html",
+    "build": "rm -rf dist/* &&  parcel build --no-optimize src/index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/RVCC-IDMX/sass-page-bryan-stanski/issues"
   },
-  "homepage": "https://github.com/RVCC-IDMX/sass-page-bryan-stanski#readme"
+  "homepage": "https://github.com/RVCC-IDMX/sass-page-bryan-stanski#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.1",
+    "sass": "^1.49.7"
+  }
 }
